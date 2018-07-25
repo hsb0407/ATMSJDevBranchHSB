@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="RequestAMLocal">
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <JDBCName>DAEMXI</JDBCName>
+         <jbo.project>freight</jbo.project>
+         <AppModuleJndiName>xxgam.oracle.apps.xbol.tm.freight.server.RequestAM</AppModuleJndiName>
+         <java.naming.factory.initial>oracle.jbo.common.JboInitialContextFactory</java.naming.factory.initial>
+         <ApplicationName>xxgam.oracle.apps.xbol.tm.freight.server.RequestAM</ApplicationName>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <ConnectionDefinition name="DAEMXI">
+      <ENTRY name="JDBC_PORT" value="10710"/>
+      <ENTRY name="ConnectionType" value="JDBC"/>
+      <ENTRY name="HOSTNAME" value="vmohsaemx001.oracleoutsourcing.com"/>
+      <ENTRY name="user" value="apps"/>
+      <ENTRY name="ConnectionName" value="DAEMXI"/>
+      <ENTRY name="SID" value="DAEMXI"/>
+      <ENTRY name="JdbcDriver" value="oracle.jdbc.OracleDriver"/>
+      <ENTRY name="password">
+         <![CDATA[{904}058187F0F40CF18B21699062B823B0F36021C3111097EFDFC2]]>
+      </ENTRY>
+      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+</BC4JConfig>
