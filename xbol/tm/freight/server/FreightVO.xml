@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="FreightVO"
+   SelectList="FreightEO.ID_FREIGHT, 
+       FreightEO.ID_FOLIO, 
+       FreightEO.ID_STRETCH, 
+       FreightEO.ID_FREIGHT_CHAR, 
+       FreightEO.ID_REQUEST, 
+       FreightEO.USE_RATE, 
+       FreightEO.ID_STATUS, 
+       FreightEO.STATUS, 
+       FreightEO.ID_CLASSIFICATION, 
+       FreightEO.CLASSIFICATION, 
+       FreightEO.ID_ORIGIN, 
+       FreightEO.ORIGIN, 
+       FreightEO.ID_ZONE, 
+       FreightEO.ZONE_DESC, 
+       FreightEO.ID_DISTRIBUTION, 
+       FreightEO.DISTRIBUTION_CODE, 
+       FreightEO.DISTRIBUTION, 
+       FreightEO.ID_DESTINATION, 
+       FreightEO.DESTINATION, 
+       FreightEO.ID_MEDIA, 
+       FreightEO.MEDIA, 
+       FreightEO.ID_MODE, 
+       FreightEO.MODE_CODE, 
+       FreightEO.MODE_DESC, 
+       FreightEO.ID_PROVIDER, 
+       FreightEO.PROVIDER, 
+       FreightEO.ETD, 
+       FreightEO.ETD_HOUR, 
+       FreightEO.ETA, 
+       FreightEO.ETA_HOUR, 
+       FreightEO.ARRIVAL_DATE, 
+       FreightEO.ARRIVAL_TIME, 
+       FreightEO.FREIGHT_JOB, 
+       FreightEO.AWB_BOL, 
+       FreightEO.FLIGHT, 
+       FreightEO.PEDIMENT, 
+       FreightEO.MULTIPLE_DELIVERIES_FLAG, 
+       FreightEO.NUM_DELIVERIES, 
+       FreightEO.INVOICE_STATUS, 
+       FreightEO.DOCUMENT1, 
+       FreightEO.DOCUMENT2, 
+       FreightEO.DOCUMENT3, 
+       FreightEO.DOCUMENT4, 
+       FreightEO.ATTRIBUTE1, 
+       FreightEO.ATTRIBUTE2, 
+       FreightEO.ATTRIBUTE3, 
+       FreightEO.ATTRIBUTE4, 
+       FreightEO.ATTRIBUTE5, 
+       FreightEO.ATTRIBUTE6, 
+       FreightEO.ATTRIBUTE7, 
+       FreightEO.ATTRIBUTE8, 
+       FreightEO.ATTRIBUTE9, 
+       FreightEO.ATTRIBUTE10, 
+       FreightEO.LAST_UPDATE_DATE, 
+       FreightEO.LAST_UPDATED_BY, 
+       FreightEO.CREATION_DATE, 
+       FreightEO.CREATED_BY, 
+       FreightEO.LAST_UPDATE_LOGIN, 
+       FreightEO.PRIORITY, 
+       FreightEO.PRIORITY_CODE"
+   FromList="BOLINF.XXGAM_TM_FREIGHT_INFO_T FreightEO"
+   OrderBy="ID_FREIGHT"
+   BindingStyle="OracleName"
+   CustomQuery="false"
+   RowClass="xxgam.oracle.apps.xbol.tm.freight.server.FreightVORowImpl"
+   ComponentClass="xxgam.oracle.apps.xbol.tm.freight.server.FreightVOImpl"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <EntityUsage
+      Name="FreightEO"
+      Entity="xxgam.oracle.apps.xbol.tm.freight.schema.FreightEO" >
+      <DesignTime>
+         <Attr Name="_queryClause" Value="true" />
+         <Attr Name="_queryOrderBy" Value="ID_FREIGHT" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="IdFreight"
+      IsNotNull="true"
+      EntityAttrName="IdFreight"
+      EntityUsage="FreightEO"
+      AliasName="ID_FREIGHT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdFolio"
+      EntityAttrName="IdFolio"
+      EntityUsage="FreightEO"
+      AliasName="ID_FOLIO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdStretch"
+      EntityAttrName="IdStretch"
+      EntityUsage="FreightEO"
+      AliasName="ID_STRETCH" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdFreightChar"
+      EntityAttrName="IdFreightChar"
+      EntityUsage="FreightEO"
+      AliasName="ID_FREIGHT_CHAR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdRequest"
+      EntityAttrName="IdRequest"
+      EntityUsage="FreightEO"
+      AliasName="ID_REQUEST" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="UseRate"
+      EntityAttrName="UseRate"
+      EntityUsage="FreightEO"
+      AliasName="USE_RATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdStatus"
+      EntityAttrName="IdStatus"
+      EntityUsage="FreightEO"
+      AliasName="ID_STATUS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Status"
+      EntityAttrName="Status"
+      EntityUsage="FreightEO"
+      AliasName="STATUS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdClassification"
+      EntityAttrName="IdClassification"
+      EntityUsage="FreightEO"
+      AliasName="ID_CLASSIFICATION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Classification"
+      EntityAttrName="Classification"
+      EntityUsage="FreightEO"
+      AliasName="CLASSIFICATION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdOrigin"
+      EntityAttrName="IdOrigin"
+      EntityUsage="FreightEO"
+      AliasName="ID_ORIGIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Origin"
+      EntityAttrName="Origin"
+      EntityUsage="FreightEO"
+      AliasName="ORIGIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdZone"
+      EntityAttrName="IdZone"
+      EntityUsage="FreightEO"
+      AliasName="ID_ZONE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ZoneDesc"
+      EntityAttrName="ZoneDesc"
+      EntityUsage="FreightEO"
+      AliasName="ZONE_DESC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdDistribution"
+      EntityAttrName="IdDistribution"
+      EntityUsage="FreightEO"
+      AliasName="ID_DISTRIBUTION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DistributionCode"
+      EntityAttrName="DistributionCode"
+      EntityUsage="FreightEO"
+      AliasName="DISTRIBUTION_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Distribution"
+      EntityAttrName="Distribution"
+      EntityUsage="FreightEO"
+      AliasName="DISTRIBUTION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdDestination"
+      EntityAttrName="IdDestination"
+      EntityUsage="FreightEO"
+      AliasName="ID_DESTINATION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Destination"
+      EntityAttrName="Destination"
+      EntityUsage="FreightEO"
+      AliasName="DESTINATION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdMedia"
+      EntityAttrName="IdMedia"
+      EntityUsage="FreightEO"
+      AliasName="ID_MEDIA" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Media"
+      EntityAttrName="Media"
+      EntityUsage="FreightEO"
+      AliasName="MEDIA" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdMode"
+      EntityAttrName="IdMode"
+      EntityUsage="FreightEO"
+      AliasName="ID_MODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ModeCode"
+      EntityAttrName="ModeCode"
+      EntityUsage="FreightEO"
+      AliasName="MODE_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ModeDesc"
+      EntityAttrName="ModeDesc"
+      EntityUsage="FreightEO"
+      AliasName="MODE_DESC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdProvider"
+      EntityAttrName="IdProvider"
+      EntityUsage="FreightEO"
+      AliasName="ID_PROVIDER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Provider"
+      EntityAttrName="Provider"
+      EntityUsage="FreightEO"
+      AliasName="PROVIDER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Etd"
+      EntityAttrName="Etd"
+      EntityUsage="FreightEO"
+      AliasName="ETD" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EtdHour"
+      EntityAttrName="EtdHour"
+      EntityUsage="FreightEO"
+      AliasName="ETD_HOUR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Eta"
+      EntityAttrName="Eta"
+      EntityUsage="FreightEO"
+      AliasName="ETA" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EtaHour"
+      EntityAttrName="EtaHour"
+      EntityUsage="FreightEO"
+      AliasName="ETA_HOUR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ArrivalDate"
+      EntityAttrName="ArrivalDate"
+      EntityUsage="FreightEO"
+      AliasName="ARRIVAL_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ArrivalTime"
+      EntityAttrName="ArrivalTime"
+      EntityUsage="FreightEO"
+      AliasName="ARRIVAL_TIME" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="FreightJob"
+      EntityAttrName="FreightJob"
+      EntityUsage="FreightEO"
+      AliasName="FREIGHT_JOB" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AwbBol"
+      EntityAttrName="AwbBol"
+      EntityUsage="FreightEO"
+      AliasName="AWB_BOL" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Flight"
+      EntityAttrName="Flight"
+      EntityUsage="FreightEO"
+      AliasName="FLIGHT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Pediment"
+      EntityAttrName="Pediment"
+      EntityUsage="FreightEO"
+      AliasName="PEDIMENT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="MultipleDeliveriesFlag"
+      EntityAttrName="MultipleDeliveriesFlag"
+      EntityUsage="FreightEO"
+      AliasName="MULTIPLE_DELIVERIES_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="NumDeliveries"
+      EntityAttrName="NumDeliveries"
+      EntityUsage="FreightEO"
+      AliasName="NUM_DELIVERIES" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceStatus"
+      EntityAttrName="InvoiceStatus"
+      EntityUsage="FreightEO"
+      AliasName="INVOICE_STATUS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Document1"
+      EntityAttrName="Document1"
+      EntityUsage="FreightEO"
+      AliasName="DOCUMENT1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Document2"
+      EntityAttrName="Document2"
+      EntityUsage="FreightEO"
+      AliasName="DOCUMENT2" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Document3"
+      EntityAttrName="Document3"
+      EntityUsage="FreightEO"
+      AliasName="DOCUMENT3" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Document4"
+      EntityAttrName="Document4"
+      EntityUsage="FreightEO"
+      AliasName="DOCUMENT4" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute1"
+      EntityAttrName="Attribute1"
+      EntityUsage="FreightEO"
+      AliasName="ATTRIBUTE1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute2"
+      EntityAttrName="Attribute2"
+      EntityUsage="FreightEO"
+      AliasName="ATTRIBUTE2" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute3"
+      EntityAttrName="Attribute3"
+      EntityUsage="FreightEO"
+      AliasName="ATTRIBUTE3" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute4"
+      EntityAttrName="Attribute4"
+      EntityUsage="FreightEO"
+      AliasName="ATTRIBUTE4" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute5"
+      EntityAttrName="Attribute5"
+      EntityUsage="FreightEO"
+      AliasName="ATTRIBUTE5" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute6"
+      EntityAttrName="Attribute6"
+      EntityUsage="FreightEO"
+      AliasName="ATTRIBUTE6" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute7"
+      EntityAttrName="Attribute7"
+      EntityUsage="FreightEO"
+      AliasName="ATTRIBUTE7" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute8"
+      EntityAttrName="Attribute8"
+      EntityUsage="FreightEO"
+      AliasName="ATTRIBUTE8" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute9"
+      EntityAttrName="Attribute9"
+      EntityUsage="FreightEO"
+      AliasName="ATTRIBUTE9" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute10"
+      EntityAttrName="Attribute10"
+      EntityUsage="FreightEO"
+      AliasName="ATTRIBUTE10" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateDate"
+      EntityAttrName="LastUpdateDate"
+      EntityUsage="FreightEO"
+      AliasName="LAST_UPDATE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdatedBy"
+      EntityAttrName="LastUpdatedBy"
+      EntityUsage="FreightEO"
+      AliasName="LAST_UPDATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreationDate"
+      EntityAttrName="CreationDate"
+      EntityUsage="FreightEO"
+      AliasName="CREATION_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreatedBy"
+      EntityAttrName="CreatedBy"
+      EntityUsage="FreightEO"
+      AliasName="CREATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateLogin"
+      EntityAttrName="LastUpdateLogin"
+      EntityUsage="FreightEO"
+      AliasName="LAST_UPDATE_LOGIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DetailFlag"
+      IsSelected="false"
+      IsPersistent="false"
+      Type="java.lang.Boolean"
+      ColumnType="NUMBER"
+      AliasName="VIEW_ATTR"
+      Passivate="true"
+      SQLType="BIT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Priority"
+      EntityAttrName="Priority"
+      EntityUsage="FreightEO"
+      AliasName="PRIORITY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PriorityCode"
+      EntityAttrName="PriorityCode"
+      EntityUsage="FreightEO"
+      AliasName="PRIORITY_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IsRecordEnabled"
+      IsSelected="false"
+      IsPersistent="false"
+      Type="java.lang.Boolean"
+      ColumnType="NUMBER"
+      AliasName="VIEW_ATTR"
+      Passivate="true"
+      SQLType="BIT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IsEditEnabled"
+      IsSelected="false"
+      IsPersistent="false"
+      Type="java.lang.Boolean"
+      ColumnType="NUMBER"
+      AliasName="VIEW_ATTR"
+      Passivate="true"
+      SQLType="BIT" >
+   </ViewAttribute>
+</ViewObject>
